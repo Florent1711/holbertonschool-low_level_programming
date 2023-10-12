@@ -18,9 +18,15 @@
       • You are not allowed to use printf
       • Your program should end with the value 0
 
-Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+5-printf.c - Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+	• Use the function printf
+	• You are not allowed to use the function puts
+	• Your program should return 0
+	• Your program should compile without warning when using the -Wall gcc option
 
-Use the function printf
-You are not allowed to use the function puts
-Your program should return 0
-Your program should compile without warning when using the -Wall gcc option
+6-size.c - Write a C program that prints the size of various types on the computer it is compiled and run on.
+	 • You should produce the exact same output as in the example
+	 • Warnings are allowed
+	 • Your program should return 0
+	 • If you are using a linux on Vagrant you might have to install the package libc6-dev-i386 to test the -m32 gcc option (normally you dont need to do anything on your sandbox)
+
