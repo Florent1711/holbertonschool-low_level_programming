@@ -5,7 +5,7 @@
  *
  * Description: "affiche tous les chiffres en base 10 à partir de 0
  *
- * return: always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
