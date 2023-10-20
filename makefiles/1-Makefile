@@ -1,0 +1,10 @@
+all: school
+
+CC = gcc
+SRC = main.c school.c
+
+school: school.o main.o
+	CC -o school main.o school.o
+
+*.o: SRC
+	CC -o *.o -c SRC
