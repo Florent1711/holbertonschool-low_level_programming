@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_square - fonction
+ * @size: taille du carré
+ *
+ * Description: affiche un carré
+ */
+
 void print_square(int size)
 {
 	int y;
@@ -20,6 +27,7 @@ void print_square(int size)
 			{
 				_putchar('#');
 			}
+			_putchar('\n');
 		}
 	}
 }
