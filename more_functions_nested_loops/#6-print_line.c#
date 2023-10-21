@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * print_line - Principal
+ *
+ * @n: nombre de lignes
+ *
+ * Description: Affiche une ligne en _ tant que n n'est pas 0
+ */
+
+void print_line(int n)
+{
+	while (n-- > 0)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
+}
