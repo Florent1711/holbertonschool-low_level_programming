@@ -1,6 +1,6 @@
 #include "main.h"
 
-
+// Attention boucle infine
 
 void print_to_98(int n)
 {
