@@ -1,39 +1,66 @@
 #include "main.h"
 
+/* code fournie par l'IA de bing pour étude */
+
 void print_to_98(int n)
 {
-	if (n < 98)
-	{
-		while (n <= 98)
-		{
-			_putchar(n);
+	int i, j, k, d;
 
-			n++;
-			
-			if (n != 99);
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
-	}
-	
-	else if (n > 98)
+	/* Loop from n to 98 and print each number */
+	for (i = n; i <= 98; i++)
 	{
-		while (n >= 98)
+		/* Check if the number is negative */
+		if (i < 0)
 		{
-			_putchar('n');
-			n--;
-			if (n != 97)
+			/* Print the minus sign */
+			putchar('-');
+
+			/* Convert the number to positive */
+			i = -i;
+		}
+
+		/* Find the number of digits in the number */
+		j = i;
+		d = 0;
+		while (j > 0)
+		{
+			j /= 10;
+			d++;
+		}
+
+		/* Print each digit using putchar */
+		j = i;
+		while (d > 0)
+		{
+			/* Find the power of 10 for the current digit */
+			k = 1;
+			while (d > 1)
 			{
-				_putchar(',');
-				_putchar(' ');
+				k *= 10;
+				d--;
 			}
+
+			/* Print the current digit */
+			putchar((j / k) + '0');
+
+			/* Remove the current digit from the number */
+			j %= k;
+		}
+
+		/* Print a comma and a space after each number except 98 */
+		if (i != 98)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+		/* Convert the number back to negative if it was negative */
+		if (i < 0)
+		{
+			i = -i;
 		}
 	}
-	else
-	{
-		_putchar('n');
-	}
-	_putchar('\n');
+
+	/* Print a new line at the end */
+	putchar('\n');
 }
