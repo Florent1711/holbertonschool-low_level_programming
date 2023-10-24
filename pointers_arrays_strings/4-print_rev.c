@@ -1,18 +1,23 @@
 #include "main.h"
+#include "2-strlen.c"
+
+/**
+ * print_rev - fonction qui inverse une chaine
+ * @s: chaine à inverser
+ *
+ * Description: inverse une chaine de caractère
+ */
 
 void print_rev(char *s)
 {
-	int compte;
-	int i;
-	int r;
+	int longueur;
+	int index;
 
-	for (i = 0; s[i] != '\0'; i++)
+	longueur = _strlen(s);
+
+	for (index = longueur - 1; index >= 0; index--)
 	{
-		compte++;
-	}
-	for (r = compte; r >= 0; r--)
-	{
-		_putchar(s[r]);
+		_putchar(s[index]);
 	}
 	_putchar('\n');
 }
