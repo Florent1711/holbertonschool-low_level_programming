@@ -4,7 +4,7 @@
  *_strncat - fonction qui concatène 2 chaines
  * @dest: chaine de destination
  * @src: chaine source
- * @n: comparaison de l'index 
+ * @n: comparaison de l'index
  *
  * Return: dest
  */
