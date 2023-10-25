@@ -7,20 +7,19 @@
  *
  * Description: copie la chaine de caractères pointée par src
  *
- * Return: destination
+ * Return: str
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int increment;
+	char *str = dest;
 
-	while (*(src + increment) != '\0')
+	while (*src != '\0')
 	{
-		*(dest + increment) = *(src + increment);
-		increment++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-
-	*(dest + increment) = '\0';
-
-	return (dest);
+	*dest = '\0';
+	return (str);
 }
