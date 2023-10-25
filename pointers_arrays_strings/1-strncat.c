@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ *_strncat - fonction qui concatène 2 chaines
+ * @dest: chaine de destination
+ * @src: chaine source
+ * @n: comparaison de l'index 
+ *
+ * Return: dest
+ */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int index;
