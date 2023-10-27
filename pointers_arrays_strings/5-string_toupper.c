@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * string_toupper - fonction qui transforme les lettres min. en maj.
+ * @p: chaine à transformer
+ *
+ * Description: transforme les bas de casse en majuscules
+ *
+ * Return: la chaine transformée
+ */
+
 char *string_toupper(char *p)
 {
 	int i;
