@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * cap_string - fonction qui ajoute des capitales aux mots
+ * @s : chaine à traiter
+ *
+ * Description: ajoute des majuscules à chaque mot.
+ *
+ * Return: chaine modifiée
+ */
+
 char *cap_string(char *s)
 {
 	int i;
