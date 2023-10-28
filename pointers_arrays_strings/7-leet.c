@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * leet - Fonction qui encode une chaine de caractères en 1337
+ * @s: chaine à encoder
+ *
+ * Description: encode une chaine de caractères en 1337 (leet)
+ * Return: la chaine encodée
+ */
+
 char *leet(char *s)
 {
 	int i;
