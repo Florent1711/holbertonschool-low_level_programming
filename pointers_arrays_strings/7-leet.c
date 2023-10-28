@@ -5,7 +5,7 @@ char *leet(char *s)
 	int i;
 	int x;
 
-	int cherche[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	int cherche[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	int remplace[] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != '\0'; i++)
