@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_chessboard - fonction qui imprime l'échiquier
+ * @a: Ligne du tableau
+ *
+ */
+
 void print_chessboard(char (*a)[8])
 {
 	int i;
