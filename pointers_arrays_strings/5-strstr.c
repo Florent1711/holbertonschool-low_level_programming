@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strstr - fonction qui localise une sous-chaine
+ * @haystack: Chaine dans laquelle chercher
+ * @needle: chaine à rechercher
+ *
+ * Return: Always 0 (Success)
+ */
+
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
