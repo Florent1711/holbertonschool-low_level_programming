@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strpbrk - recherche dans chaîne caractères l'un des octets d'un ensemble
+ * @s: chaine à chercher
+ * @accept: octet à chercher
+ *
+ * Return: Always 0 (success)
+ */
+
 char *_strpbrk(char *s, char *accept)
 {
 	int i;
