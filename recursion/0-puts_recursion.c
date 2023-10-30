@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _puts_recursion - fonction qui affiche une chaine de caractères
+ * @s: chaine de caractères
+ *
+ */
+
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
