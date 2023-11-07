@@ -6,18 +6,32 @@
  *_strdup - renvoie un pointeur vers 1 espace alloué qui contient copie du str
  * @str: chaine à copier
  *
- * Return: Null ou new_str
+ * Return: Null ou dbl
  */
 
 char *_strdup(char *str)
 {
-	char *new_str = malloc(strlen(str) + 1);
+	char *dbl;
+	int index;
+	int leng;
 
-	if (new_str == NULL)
-	{
+	if (str == NULL)
 		return (NULL);
 
+	for (index = 0; str[index]; index++)
+	{
+		leng++;
 	}
-	strcpy(new_str, str);
-	return (new_str);
+	dbl = malloc(sizeof(char) * (leng + 1));
+
+	if (dbl == NULL)
+		return (NULL);
+
+	for (index = 0; str[index]; index++)
+	{
+		dbl[index] = str[index];
+	}
+
+	dbl[leng] = '\0';
+	return (dbl);
 }
