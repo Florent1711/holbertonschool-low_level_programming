@@ -1,5 +1,5 @@
-#ifndef DOG.H
-#define DOG.H
+#ifndef dog_h
+#define dog_h
 
 struct dog {
 	char *name;
