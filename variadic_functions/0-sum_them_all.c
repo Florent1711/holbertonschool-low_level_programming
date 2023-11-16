@@ -1,6 +1,13 @@
 #include "variadic_functions.h"
 #include "stdarg.h"
 
+/**
+ * sum_them_all - renvoie la somme de tous ses paramètres
+ * @n: entiers reçus
+ *
+ * Return: sum
+ */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
