@@ -1,5 +1,5 @@
-#ifndef dog_h
-#define dog_h
+#ifndef __protect__
+#define __protect__
 
 /**
  * struct dog - chien ?

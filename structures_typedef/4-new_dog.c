@@ -3,6 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * new_dog - créé un nouveau chien
+ * @name: nom du chien
+ * @age: son age
+ * @owner: son proprio
+ *
+ * Return: NULL ou dog2
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog2;
@@ -14,14 +23,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	dog2->name = strdup(name);
 
-	if(dog2->name == NULL)
+	if (dog2->name == NULL)
 		return (NULL);
 
 	dog2->age = age;
 
 	dog2->owner = strdup(owner);
 
-	if(dog2->owner == NULL)
+	if (dog2->owner == NULL)
 		return (NULL);
 
 	return (dog2);
