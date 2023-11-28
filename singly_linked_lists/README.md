@@ -20,3 +20,6 @@
       • str needs to be duplicated
       • You are allowed to use strdup
 
+4-free_list.c - Write a function that frees a list_t list.
+      • Prototype: void free_list(list_t *head);
+
