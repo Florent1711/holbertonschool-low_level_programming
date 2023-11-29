@@ -9,13 +9,14 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *current = head;
-	dlistint_t *next;
+	dlistint_t *current = head; /*pointeur vers le noeud actuel*/
+	dlistint_t *next; /*pointeur vers le prochain noeud */
 
+	/* parcours la liste tant que le noeud != NULL */
 	while (current != NULL)
 	{
-		next = current->next;
+		next = current->next; /*save pointeur vers le prochain noeud*/
 		free(current);
-		current = next;
+		current = next; /*Deplace vers le prochain noeud*/
 	}
 }
