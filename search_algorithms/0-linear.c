@@ -1,13 +1,5 @@
 #include "search_algos.h"
 
-/**
- * linear_search - searches for a value in an array of integers
- * @array: tableau à parcourir
- * @size: Nbre d'élément dans le tableau
- * @value: Valeur recherchée
- * Return: i ou -1
- */
-
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
